@@ -17,8 +17,8 @@ function App() {
     <div className="content">
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/my-app/" element={<Home />} />
-      <Route path="/my-app" element={<Home />} />
+      <Route path="/my-app/" element={<Home/>} />
+      <Route path="/my-app" element={<Home/>} />
       <Route path="/create" element={<Newcv/>}/>
       <Route path="/blogs/:id" element={<Fulldisplay/>}/>
       </Routes>
