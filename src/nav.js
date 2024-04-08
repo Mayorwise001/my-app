@@ -8,7 +8,7 @@ const Navbar = () => {
     return ( 
         <nav className="navbar">
         <h1>Resume Creator</h1>
-
+    
         <div className="links">
         <Link to="/">Home
         <FontAwesomeIcon icon={faHouse} />
