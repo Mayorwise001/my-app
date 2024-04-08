@@ -12,20 +12,17 @@ const Newcv = () => {
     const [phone, setphone] = useState('');
     const [email, setemail] = useState('');
     const [address, setaddress] = useState('');
-    const [ispending, setispending] = useState('');
     const history = useNavigate();
 
     const handleSubmit = (e)=>{
         e.preventDefault();
         const blog = { name,phone,email,address,formData, expert};
-        setispending(true)
+
         fetch('http://localhost:8000/blogs', {
             method:'POST',
             headers:{"Content-Type":"application/json"},
             body: JSON.stringify(blog)
         }).then(()=>{
-            
-            setispending(false)
             history('/')
    
             

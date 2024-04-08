@@ -1,4 +1,3 @@
-import {useState, useEffect} from "react";
 import Reusable from "./customhook";
 import Homelist from "./homedisplay";
 const Home = () => {

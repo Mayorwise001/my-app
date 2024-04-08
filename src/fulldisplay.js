@@ -11,7 +11,7 @@ import './index.css';
 
 const Fulldisplay = () => {
     const {id} = useParams();
-    const {blogs:blogger, error, ispending} = Reusable('http://localhost:8000/blogs/' + id)
+    const {blogs:blogger} = Reusable('http://localhost:8000/blogs/' + id)
 const history = useNavigate();
     const handleClick = () =>{
         fetch('http://localhost:8000/blogs/' + blogger.id,{
